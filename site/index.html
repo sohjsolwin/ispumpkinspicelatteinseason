@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="./psl.css">
+</head>
+<body>
+
+    <div id="the-ultimate-answer"></div>
+    <script> 
+        var soonDate = new Date();
+        soonDate.setDate(1);
+        soonDate.setMonth(7);
+        var startDate = new Date();
+        startDate.setDate(1);
+        startDate.setMonth(8);
+        var endDate = new Date();
+        endDate.setDate(15);
+        endDate.setMonth(10);
+        var today = new Date();
+        var text = "Not Yet...";
+        if (today >= soonDate) 
+            text = "Soon, my son. Soon.";
+
+        if (today >= startDate) 
+            text = "PSL has arrived. Rejoice!";
+
+        if (today >= endDate) 
+            text = "PSL has left this world, for now...";
+
+        document.querySelector("#the-ultimate-answer").textContent = text;
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-83413351-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
